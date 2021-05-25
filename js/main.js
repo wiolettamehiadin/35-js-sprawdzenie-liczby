@@ -1,10 +1,13 @@
-    let n = 120;
-    if (n<100) {
-        console.log('Liczba nie znajduje się w przedziale');
-    }
-    else if (n>100<200) {
-        console.log('Liczna znajduje sie w przedziale');
-    }
-        
 
-console.log(n);
+   
+
+    function checkNumber(number) {
+        
+        if (number>=100 && number<=200) {
+           return console.log('Liczna znajduje sie w przedziale');  
+        } else (number<=100 && number>=200); {
+           return console.log('Liczna nie znajduje sie w przedziale');
+          }
+        }
+    
+        console.log(checkNumber(150));
